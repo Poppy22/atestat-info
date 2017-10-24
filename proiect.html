@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Genetica moleculara</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top text-center" role="navigation">
+    <div class="container-fluid text-center">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home" id="btn1" onclick="changeStyle('btn1')">Prima pagina</a></li>
+          <li><a href="#intro" id="btn2" onclick="changeStyle('btn2')">Introducere</a></li>
+          <li><a href="#ADN" id="btn3" onclick="changeStyle('btn3')">Despre ADN</a></li>
+          <li><a href="#ARN" id="btn4" onclick="changeStyle('btn4')">Despre ARN</a></li>
+          <li><a href="#problems" id="btn5" onclick="changeStyle('btn5')">Probleme de genetica</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div id="home">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-xs-12 col-sm-12">
+        <div id="title">
+          Genetica <br> moleculara
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="intro">
+	<div class="container-fluid">
+		<div class="row">
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <ul class="sticky">
+          <li class="sticky">
+            <h2> <u> Acizii nucleici </u> </h2>
+            <p>substante chimice macromoleculare alcatuite din unitati simple numite nucleotide
+            </p>
+          </li>
+          <li class="sticky">
+            <h2> Doua tipuri de acizi nucleici: </h2> <br>
+            <ul>
+              <li> <abbr title = "Acid dezoxiribonucleic"> ADN </abbr> </li>
+              <li> <abbr title = "Acid ribonucleic"> ARN  </abbr> </li>
+            </ul>
+          </p>
+          </li>
+          <li class="sticky">
+            <img src="images/sketch.png" class="sketch">
+          </li>
+          <li class="sticky">
+            <h2>Componentele unei nucleotide</h2>
+            <ol type="none">
+            <li>  o baza azotata </li>
+            <li> zahar </li>
+            <li> radical fosforic </li>
+          </ol>
+          </li>
+          <li class="sticky">
+            <h2> <u> Bazele azotate </u> </h2>
+            <p>substante organice in care atomii de carbon si de azot sunt grupati in cicluri; sunt de doua tipuri.</p>
+          </li>
+          <li class="sticky">
+            <h2>Baze azotate purinice</h2>
+            <p><ul>
+                <li> Adenina <b> (A) </b> <i> - prezenta in ADN si in ARN  </i> </li>
+                <li> Guanina <b> (G) </b> <i> - prezenta in ADN si in ARN </i> </li>
+              </ul></p>
+          </li>
+          <li class="sticky">
+            <h2>Baze azotate pirimidinice</h2>
+            <p>
+              <ul type="none">
+                  <li> Citozina <b> (C) </b> - <i> prezenta in ADN si in ARN </i> </li>
+                  <li> Timina <b> (T) </b> <i> - ADN </i> </li>
+                  <li> Uracilul <b> (U) </b> <i> - ARN </i> </li>
+              </ul></p>
+          </li>
+          <li class="sticky">
+            <p id="chalk">
+              baza azotata + <br> zahar = <br> nucleosida <br> <br>
+              nucleosida + <br> radical fosforic =  <br> nucleotida
+              <br> <br> A = T; C ≡ G
+            </p>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="ADN">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-xs-12 col-sm-12">
+        <a href="#" class="dna"> <img src="images/dna.gif" border="1px"> </a>
+      </div>
+      <div class="col-md-4 col-xs-12 col-sm-12 container-fluid">
+          <h1 class="colorful-shadow-adn"> ADN </h1>
+        <p>
+          <h4> In macromolecula de ADN se deosebesc doua tipuri de structuri: </h4>
+          <ol type="A">
+            <li> <mark> structura primara monocatenara:</mark> <i> reprezentata de succesiunea de nucleotide dintr-o catena. </i> </li>
+            <li> <mark> structura secundara bicatenara:</mark> <i> reprezentata de structura bicatenara a ADN-ului, ce confera tabilitate astfel: </i>
+              <ul>
+              <li> pe verticala de legaturile fosfodiesterice intracatenare </li>
+              <li> pe orizontala de legaturile de hidrogen intercatenare </li>
+              </ul>
+            </li>
+          </ol>
+        </p>
+        <p class="list-group-item-info">
+          Cele doua catene ale ADN-ului sunt <b> antiparalele</b>, ceea ce inseamna ca pe o catena legaturile dintre nucleotide sunt de tip 5'-3' iar pe cealalta catena sunt invers, adica 3'-5'.
+        </p>
+        <p class="list-group-item-success">
+          Cele doua catene ale ADN-ului sunt <b> complementare</b>, ceea ce inseamna ca o nucleotida, de pe o catena, ce contine o baza azotata purinica se va lega intotdeauna de o nucleotida de pe cealalta catena care contine o baza azotata pirimidinica, si invers.
+        </p>
+      </div>
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <h1> <center> ADN - spirala vietii </center> </h1>
+        <br> <br>
+        <img src="images/circle.png" class="grow">
+        <br> <br>
+        <img src="images/dna-rotate.jpg" class="rotate">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ARN">
+	<div class="container-fluid">
+		<div class="row">
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <h1 class="colorful-shadow-arn"> ARN </h1>
+        <blockquote>
+          ARN este o substanta macromoleculara avand o structura primara monocatenara formata de regula dintr-un singur lant polinucleotidic.
+Nucleotidele de ARN (ribonucleotide) au in locul timinei uracil si in locul dezoxiribozei, riboza.
+Moleculele de ARN nu pot avea dimensiuni foarte mari, deoarece cu cat creste numarul de nucleotide (peste cateva mii) cu atat scade si stabilitatea moleculei.
+        </blockquote>
+        <h3> Tipuri de ARN </h3>
+        <hr>
+        <ul class="arn" type="none">
+          <li class="stage">
+            <div class="stage-content">
+              <p class="arn-center">
+                Este materialul genetic al ribovirusurilor (bacteriofagi, virusul mozaicul tutunului, virusul gripal, virusul turbarii, HIV) si al viroizilor (au o molecula mica de ARN lipsita de capsula virala).
+              </p>
+            </div>
+            <div class="curtain-container">
+              <label class="curtain-panel">
+                <input type="checkbox" class="curtain-trigger" />
+                <div class="left curtain" data-title="ARN">
+                </div>
+                <div class="right curtain" data-title="viral">
+                </div>
+              </div>
+            </label>
+          </li>
+
+          <li class="stage">
+            <div class="stage-content">
+              Copiaza informatia genetica a unei catene de ADN si o duce la nivelul ribozomilor, unde are loc sinteza proteinelor. Fenomenul de copiere se numeste transcriptie (transcriere) si are loc in nucleu.
+ARNm este monocatenar si are o lungime variabila in functie de marimea moleculelor proteice care vor fi sintetizate.
+            </div>
+            <div class="curtain-container">
+              <label class="curtain-panel">
+                <input type="checkbox" class="curtain-trigger" />
+                <div class="left curtain" data-title="ARN">
+                </div>
+                <div class="right curtain" data-title="mesager">
+                </div>
+              </div>
+            </label>
+          </li>
+
+          <li class="stage">
+            <div class="stage-content">
+                Transporta aminoacizii la locul sintezei proteice (la ribozomi. Molecula sa este formata din 70-90 nucleotide.Este monocatenar cu portiuni bicatenare, care ii dau aspectul unei frunze de trifoi.
+            </div>
+            <div class="curtain-container">
+              <label class="curtain-panel">
+                <input type="checkbox" class="curtain-trigger" />
+                <div class="left curtain" data-title="ARN">
+                </div>
+                <div class="right curtain" data-title="de trasnfer">
+                </div>
+              </div>
+            </label>
+          </li>
+
+          <li class="stage">
+            <div class="stage-content">
+              Intra in alcatuirea ribozomilor si are rol in sinteza proteinelor.
+Un ribozom este format din doua subunitati inegale care vor recunoaste si vor atasa intre ele nucleotidele de recunoastere de la inceputul moleculei de ARNm.
+            </div>
+            <div class="curtain-container">
+              <label class="curtain-panel">
+                <input type="checkbox" class="curtain-trigger" />
+                <div class="left curtain" data-title="ARN">
+                </div>
+                <div class="right curtain" data-title="ribozomal">
+                </div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="problems">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 col-xs-12 col-sm-12">
+        <p class="content">
+          <h4> Problema 1 </h4>
+          O secventa a unei catene de ADN contine
+          <ul>
+            <li> 150 nucleotide A </li>
+            <li> 50 nucleotide T </li>
+            <li> 300 nucleotide C </li>
+            <li> 1500 nucleotide G </li>
+          </ul>
+          Calculati numarul de nucleotide de fiecare fel din catena complementara.
+          <br>
+          <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#rez1">Arata rezolvarea</button>
+  				<div id="rez1" class="collapse"> <a href="problema1.zip"> Descarca rezolvarea </a> </div>
+        </p>
+        <hr>
+        <p class="content">
+          <h4> Problema 2 </h4>
+          Două catene de ADN sunt legate prin legaturi de hidrogen. Determinati cantitatea legaturilor de hidrogen în aceasta portiune de ADN, daca este cunoscut ca nucleotide adenilice sunt in numar de 12, iar guanilice de 20.
+        <br>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#rez2">Arata rezolvarea</button>
+        <div id="rez2" class="collapse"> <a href="problema2.zip"> Descarca rezolvarea </a> </div>
+        </p>
+        <hr>
+        <p class="content">
+          <h4> Problema 3 </h4>
+          Se da secventa: ATTGCGCATCCG. Scrieti catena complementara de ADN si de ARN.
+          <br>
+          <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#rez3">Arata rezolvarea</button>
+  				<div id="rez3" class="collapse"> <a href="problema3.zip"> Descarca rezolvarea  </a> </div>
+        </p>
+      </div>
+      <div class="col-md-4 col-xs-12 col-sm-12">
+          <table>
+            <tr>
+              <td> A: </td>
+              <td> <input id="rsp1A"> </input> </td>
+              <td> <p id="1A"> </p> </td>
+            </tr>
+            <tr>
+              <td> T: </td>
+              <td> <input id="rsp1T"> </input> </td>
+              <td> <p id="1T"> </p> </td>
+            </tr>
+            <tr>
+              <td> C: </td>
+              <td> <input id="rsp1C"> </input> </td>
+              <td> <p id="1C"> </p> </td>
+            </tr>
+            <tr>
+              <td> G: </td>
+              <td> <input id="rsp1G"> </input> </td>
+              <td> <p id="1G"> </p> </td>
+            </tr>
+            <tr>
+              <td colspan="4"> <button class="btn btn-warning" onclick="pb1()">Verifica!</button> </td>
+            </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr>
+              <td> H: </td>
+              <td> <input id="rsp2"> </input> </td>
+              <td> <p id="2"> </p> </td>
+            </tr>
+            <tr>
+              <td colspan="3"> <button class="btn btn-warning" onclick="pb2()">Verifica!</button> </td>
+            </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr> <td colspan="4"> </td> </tr>
+            <tr>
+              <td> ADN: </td>
+              <td> <input id="rsp3ADN"> </input> </td>
+              <td> <p id="3ADN"> </p> </td>
+            </tr>
+            <tr>
+              <td> ARN: </td>
+              <td> <input id="rsp3ARN"> </input> </td>
+              <td> <p id="3ARN"> </p> </td>
+            </tr>
+            <tr>
+              <td colspan="3"> <button class="btn btn-warning" onclick="pb3()">Verifica!</button> </td>
+            </tr>
+          </table>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="container-fluid text-center navbar-fixed-bottom">
+    <p>Proiect realizat de Popa Carmen Gabriela si Stefan Maria Sophia.
+    <br> Colegiul National Bilingv "George Cosbuc", clasa a XII-a;
+    Prof. Coord.: Petrisor Valiana
+    </p>
+  </footer>
+
+</body>
+</html>

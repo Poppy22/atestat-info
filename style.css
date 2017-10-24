@@ -1,0 +1,421 @@
+/* pentru a nu aparea meniul pe 2 randuri la diminuarea paginii, ci direct butonul de meniu */
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse { /*linia ce apare la meniul collapsed */
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+        text-align: center;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 5px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+
+  #title{
+    font-size: 50px;
+  }
+}
+
+/*urmatoarele 2 clase sunt pentru a centra meniul */
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+.navbar .navbar-collapse li a{
+    color: #d5d5d5;
+}
+
+.navbar .navbar-collapse li a:hover{
+    color: #b57f8d;
+}
+
+.navbar{
+  background-color: #707070;
+  text-shadow: 2px 1px;
+}
+
+html, body{
+  height:100%;
+}
+
+footer{
+  background-color:#707070;
+  color: #fff;
+}
+
+footer{
+  padding-top:5px;
+}
+
+#home, #intro, #ADN, #ARN, #auto, #hetero, #problems{
+  padding-top: 70px;
+  padding-bottom: 10px;
+  height: 100vh;
+}
+
+img.intro{
+  height:215px;
+  width:250px;
+}
+
+#home{
+  background-image: url("images/home.jpg");
+  background-position:-1300% 60%;
+  background-attachment: fixed;
+}
+
+#title {
+  font-family:centurygothic;
+  font-size: 6.5vmax;
+  text-align: center;
+  padding: 100px 50px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #fff;
+  letter-spacing: .15em;
+  text-shadow:
+      1px -1px 0 #767676,
+      -1px 2px 1px #737272,
+      -2px 4px 1px #767474,
+      -3px 6px 1px #787777,
+      -4px 8px 1px #7b7a7a,
+      -5px 10px 1px #7f7d7d,
+      -6px 12px 1px #828181,
+      -7px 14px 1px #868585;
+  }
+
+#intro{
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+ul.sticky{
+    padding:2.5em;
+  }
+
+ul.sticky li.sticky{
+    text-decoration:none;
+    color:#000;
+    background:#ffff99;
+    text-align: left;
+    display:block;
+    height:15em;
+    width:17em;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -moz-transition:-moz-transform .15s linear;
+    -o-transition:-o-transform .15s linear;
+    -webkit-transition:-webkit-transform .15s linear;
+  }
+
+ul.sticky li.sticky{
+    margin:1em;
+    float:left;
+  }
+
+ul.sticky li.sticky h2{
+    font-size:200%;
+    font-weight:bold;
+    padding-bottom:1px;
+    padding-top: 0px;
+    font-family:cursive;
+  }
+
+ul.sticky li.sticky p{
+    font-family:cursive;
+    font-size:100%;
+  }
+
+ul.sticky li.sticky {
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+  }
+
+ul.sticky li.sticky:nth-child(even) {
+    -o-transform:rotate(4deg);
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#b2dbd5;
+  }
+
+ul.sticky li.sticky:nth-child(3n) {
+    -o-transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+  }
+
+ul.sticky li.sticky:nth-child(5n) {
+    -o-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+
+ul.sticky li.sticky:hover,ul li.sticky:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+
+img.sketch{
+  width:180px;
+  height:180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+       -o-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+#chalk{
+  font-family: chalkduster;
+  text-align: justify;
+  padding:20px;
+}
+
+img.grow {
+  height: 20vh;
+  width: 10vw;
+  display: block;
+  margin:auto;
+  vertical-align: middle;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+img.grow:hover {
+  width: 17vw;
+  height: 30vh;
+}
+
+a.dna {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+
+a.dna img{
+  display: block;
+  z-index: 1;
+  height:80vh;
+}
+
+a.dna:before{
+  background-color: rgb(128, 128, 128);
+  content:"";
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+a.dna:after {
+  display: block;
+  color: rgba(255, 255, 255, 0);
+  font-family: Tahoma;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 3%;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: scaleX(3) translateY(-50%);
+  -ms-transform: scaleX(3) translateY(-50%);
+  transform: scaleX(3) translateY(-50%);
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  width: 94%;
+  z-index: 3;
+}
+
+a.dna:after{
+  content: "ADN-ul este o substanta macromoleculara bicatenara formata din 2 catene polinucleotidice care se infasoara una in jurul celeilalte, in spirala, astfel incat se formeaza un dublu helix.";
+}
+
+a.dna:hover:before {
+  opacity: 0.6;
+}
+
+a.dna:hover:after {
+  color: rgba(255, 255, 255, 1);
+  -webkit-transform: scaleX(1) translateY(-50%);
+  -ms-transform: scaleX(1) translateY(-50%);
+  transform: scaleX(1) translateY(-50%);
+}
+
+h1.colorful-shadow-arn,
+h1.colorful-shadow-adn {
+	display: inline-block;
+  position: relative;
+	font: 60px Helvetica;
+	letter-spacing: -5px;
+	color: rgba(91,192,222, 0.7);
+}
+
+h1.colorful-shadow-adn:after{
+	content: "ADN";
+	position: absolute; left: 5px; top: 2px;
+	color: rgba(92,184,92, 0.7);
+}
+
+h1.colorful-shadow-arn:after{
+	content: "ARN";
+	position: absolute; left: 5px; top: 2px;
+	color: rgba(98,14,92, 0.7);
+}
+
+ul.arn li{
+  float:left;
+  margin: 1em;
+  text-align: center;
+  }
+
+.stage {
+  width: 250px;
+  height:200px;
+  margin: 4em auto;
+  padding: 1em 0 3em;
+  position: relative;
+}
+
+.stage-content:after {
+  display: block;
+  font-size: 1em;
+  padding-left:25px;
+  padding-right:25px;
+}
+
+.curtain-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.curtain-panel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.curtain-panel .curtain {
+  width: 50%;
+  background-color: lightblue;
+  position: relative;
+  transition: transform 0.5s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.curtain-panel .curtain:before {
+  content: attr(data-title);
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 3px #ccc;
+}
+
+.curtain-trigger {
+  visibility: hidden;
+  position: absolute;
+}
+
+.curtain-trigger:checked ~ .left{
+  transform: translateX(-100%);
+}
+
+.curtain-trigger:checked ~ .right{
+  transform: translateX(100%);
+}
+
+td{
+  padding: 5px;
+}
+
+/*rotate DNA image */
+.rotate {
+  width:15vw;
+  height:20vh;
+  margin: auto;
+  display: block;
+  vertical-align: middle;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.rotate:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
